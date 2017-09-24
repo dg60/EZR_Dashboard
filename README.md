@@ -1,4 +1,4 @@
-# Development Repo for Raspi_Dash
+# EZR_Dashboard
 
 A Dashboard for a Möhlenhoff Alpha heating Controller  
 
