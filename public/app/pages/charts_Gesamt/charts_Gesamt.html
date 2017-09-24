@@ -1,0 +1,61 @@
+<div id="page-wrapper" ng-controller="chartsCtrl">
+
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Charts
+                </h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <i class="fa fa-dashboard"></i> <a href="#!/dashboard">Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <i class="fa fa-bar-chart-o"></i> Alle Räume
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- /.row -->
+
+        <!-- Morris Charts -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Alle Räume</h2>
+                <p class="lead"> </p>
+            </div>
+        </div>
+        <!-- controller -->
+        <div ng-controller="loadavgMinCtrl_Gesamt">
+            <!-- /.row avgMin-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="reportrange_loadavgMin" class="pull-left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p id="status_loadavgMin">no Data</p>
+            <!-- /.row avgMin-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Temperaturen</h3>
+                        </div>
+                        <div class="panel-body">
+                            <nvd3 options="options" data="data"></nvd3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</div>
+<!-- /#page-wrapper -->

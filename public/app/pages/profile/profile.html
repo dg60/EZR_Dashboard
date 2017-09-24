@@ -1,0 +1,39 @@
+<div id="page-wrapper" ng-controller="profileCtrl">
+    <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Profile
+                </h1>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">ID</label>
+                        <p class="form-control-static">{{ profile.id }}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Full name</label>
+                        <p class="form-control-static">{{ profile.name }}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Email</label>
+                        <p class="form-control-static">{{ profile.email }}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Admin</label>
+                        <p class="form-control-static"><label><input type="checkbox" disabled="disabled" value="" ng-model="profile.admin" ng-checked="profile.admin"></label></p>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Token Expire</label>
+                        <p class="form-control-static">{{ profile.expire }}</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- /#page-wrapper -->

@@ -1,0 +1,15 @@
+{
+  "globalDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20161101124950",
+    "body-parser": "registry:dt/body-parser#0.0.0+20160619023215",
+    "d3": "registry:dt/d3#0.0.0+20160907005744",
+    "express": "registry:dt/express#4.0.0+20160708185218",
+    "jsonwebtoken": "registry:dt/jsonwebtoken#0.0.0+20160720062725",
+    "method-override": "registry:dt/method-override#0.0.0+20160925094606",
+    "moment": "registry:dt/moment#2.11.1+20161010105546",
+    "mongoose": "registry:dt/mongoose#4.5.9+20161010180758",
+    "morgan": "registry:dt/morgan#1.7.0+20160524142355",
+    "node": "registry:dt/node#6.0.0+20161019125345",
+    "nvd3": "registry:dt/nvd3#1.8.1+20160919061516"
+  }
+}

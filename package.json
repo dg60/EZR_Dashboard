@@ -1,0 +1,18 @@
+{
+  "name": "ezr_dash",
+  "version": "1.0.0",
+  "description": "Dashboard for EZR-Controller",
+  "main": "server.js",
+  "author": "dgrill",
+  "dependencies": {
+    "body-parser": "1.4.3",
+    "express": "4.13.4",
+    "jsonwebtoken": "^7.1.9",
+    "method-override": "2.1.3",
+    "mongoose": "4.4.12",
+    "morgan": "1.1.1"
+  },
+  "scripts": {
+    "install_dev": "npm install && bower install"
+  }
+}

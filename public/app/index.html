@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Dashboard for EZR Controller" content="app">
+    <meta name="dgrill" content="">
+
+    <title>EZR-Dashboard</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Daterangepicker CSS -->
+    <link href="assets/daterange_picker/daterangepicker.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/sb-admin.css" rel="stylesheet">
+    <!-- d3 charts -->
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Favicon -->
+    <link href="/myfavicon.ico" rel="icon"  type="image/favicon.icon">        
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="myApp">
+
+    <div id="wrapper">
+        <!-- Navigation -->
+        <div ng-controller="topnavCtrl" ng-include="'shared/topnav/topnav.html'"></div>
+        <!-- page content -->
+        <div ng-view></div>
+    </div>
+    <!-- /#wrapper -->
+    
+    <!-- Includes -->
+    <!-- JQuery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Momentjs -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <!-- Daterangepicker -->
+    <script src="assets/daterange_picker/daterangepicker.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- d3 charts -->
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+
+    <!-- Angular App -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+    <script src="app.js"></script>
+    <script src="pages/dashboard/dashboard.js"></script>
+    <script src="pages/charts/charts.js"></script>
+    <script src="pages/charts_Niklas/charts_Niklas.js"></script>
+    <script src="pages/charts_Valentin/charts_Valentin.js"></script>
+    <script src="pages/charts_SZ/charts_SZ.js"></script>
+    <script src="pages/charts_Bad/charts_Bad.js"></script>
+    <script src="pages/charts_WZ/charts_WZ.js"></script>
+    <script src="pages/charts_KUECHE/charts_KUECHE.js"></script>
+    <script src="pages/charts_BUERO/charts_BUERO.js"></script>
+    <script src="pages/charts_VR_WC/charts_VR_WC.js"></script>
+    <script src="pages/charts_Gesamt/charts_Gesamt.js"></script>
+    <script src="pages/charts_Wetter/charts_Wetter.js"></script>
+    <script src="pages/settings/settings.js"></script>
+    <script src="pages/login/login.js"></script>
+    <script src="pages/profile/profile.js"></script>
+    <script src="pages/register/register.js"></script>
+    <script src="services/authentication.service.js"></script>
+</body>
+
+</html>
