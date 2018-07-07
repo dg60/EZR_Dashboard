@@ -84,4 +84,4 @@ app.use('/api/weather', weather);
 // listen (start app with node server.js) ======================================
 //app.listen(port);
 server = https.createServer(https_options, app).listen(port, '0.0.0.0');
-console.log("App listening on port " + port);
+console.log("App listening on https://localhost:" + port);
